@@ -2,4 +2,14 @@
 
 import dynamic from "next/dynamic";
 
-export const components = {};
+export const components = {
+  centered_cta: dynamic(() => import("./CenteredCta")),
+  content_highlight_with_image: dynamic(() => import("./CallToAction")),
+  feature_grid: dynamic(() => import("./News")),
+  hero_with_background_image: dynamic(
+    () => import("./HeroWithBackgroundImage"),
+  ),
+  icon_card_grid: dynamic(() => import("./IconCardGrid")),
+  notification_bar: dynamic(() => import("./NotificationBar")),
+  testimonial_cards_with_image: dynamic(() => import("./Stories")),
+};

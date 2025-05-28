@@ -1,0 +1,86 @@
+{
+  "type": "SharedSlice",
+  "id": "feature_grid",
+  "name": "News",
+  "variations": [
+    {
+      "id": "main_with_card_grid_and_action",
+      "name": "Grid",
+      "description": "Displays a main featured item with image and large headline, to the left; a supporting grid or list of additional features to the right, and an optional prominent action button overlay above the content.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "main_feature": {
+          "type": "Group",
+          "config": {
+            "label": "Main Feature",
+            "repeat": false,
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "height": 534,
+                    "width": 496
+                  },
+                  "label": "Image"
+                }
+              },
+              "headline": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Headline"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "News link",
+                  "placeholder": "",
+                  "allowText": true,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "feature_cards": {
+          "type": "Group",
+          "config": {
+            "label": "Feature Cards",
+            "fields": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink",
+                  "label": "Description"
+                }
+              },
+              "card_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Card Link",
+                  "placeholder": "",
+                  "allowText": true,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "single_button",
+		"primary": {
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"key": "b577aabc-0638-4fc7-90fc-ee3b0c8940fc",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "paragraph"
+				}
+			},
+			"button_background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#103a9f",
+				"type": "Color"
+			}
+		},
+		"items": []
+	}
+]

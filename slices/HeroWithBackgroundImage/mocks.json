@@ -1,0 +1,94 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"background_image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+					"width": 4000,
+					"height": 6000
+				},
+				"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?rect=0%2C2471%2C4000%2C1058&w=1920&h=508",
+				"width": 1920,
+				"height": 508,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 2471
+					},
+					"background": "transparent"
+				},
+				"alt": "signal",
+				"thumbnails": {
+					"mobile": {
+						"origin": {
+							"id": "mobile",
+							"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
+							"width": 4272,
+							"height": 2848
+						},
+						"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?rect=751%2C0%2C2770%2C2848&w=390&h=401",
+						"width": 390,
+						"height": 401,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 751,
+								"y": 0
+							},
+							"background": "transparent"
+						},
+						"alt": "great"
+					},
+					"tablet": {
+						"origin": {
+							"id": "tablet",
+							"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+							"width": 4000,
+							"height": 4000
+						},
+						"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?rect=0%2C846%2C4000%2C2307&w=820&h=473",
+						"width": 820,
+						"height": 473,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 846
+							},
+							"background": "transparent"
+						},
+						"alt": "hospital"
+					}
+				}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Younger"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Est sit ut laborum labore ex ut labore."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

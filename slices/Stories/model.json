@@ -1,0 +1,61 @@
+{
+  "type": "SharedSlice",
+  "id": "testimonial_cards_with_image",
+  "name": "Stories",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard layout with image, headline, and body text side by side, supporting multiple items.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "cards": {
+          "type": "Group",
+          "config": {
+            "label": "Cards",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "height": 425,
+                    "width": 680
+                  },
+                  "label": "Image"
+                }
+              },
+              "headline": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Headline"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink",
+                  "label": "Description"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

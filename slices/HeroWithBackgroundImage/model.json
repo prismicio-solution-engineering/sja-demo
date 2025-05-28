@@ -1,0 +1,54 @@
+{
+  "type": "SharedSlice",
+  "id": "hero_with_background_image",
+  "name": "HeroWithBackgroundImage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Hero with prominent title, description, and background image for immediate context.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {
+              "height": 508,
+              "width": 1920
+            },
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 390,
+                "height": 401
+              },
+              {
+                "name": "tablet",
+                "width": 820,
+                "height": 473
+              }
+            ]
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

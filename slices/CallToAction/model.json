@@ -1,0 +1,59 @@
+{
+  "type": "SharedSlice",
+  "id": "content_highlight_with_image",
+  "name": "CallToAction",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard layout with a prominent content box alongside an image.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "allowText": false,
+            "repeat": false,
+            "select": null
+          }
+        },
+        "main_image": {
+          "type": "Image",
+          "config": {
+            "label": "Main Image",
+            "constraint": {
+              "height": 460,
+              "width": 1071
+            },
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 350,
+                "height": 350
+              }
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

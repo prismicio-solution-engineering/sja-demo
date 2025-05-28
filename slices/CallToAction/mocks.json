@@ -1,0 +1,84 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Shake"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit enim incididunt exercitation id mollit."
+						}
+					}
+				]
+			},
+			"main_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+					"width": 4172,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?rect=0%2C1104%2C4172%2C1792&w=1071&h=460",
+				"width": 1071,
+				"height": 460,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 1104
+					},
+					"background": "transparent"
+				},
+				"alt": "due",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"mobile": {
+						"origin": {
+							"id": "mobile",
+							"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+							"width": 5848,
+							"height": 3899
+						},
+						"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?rect=975%2C0%2C3899%2C3899&w=350&h=350",
+						"width": 350,
+						"height": 350,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 975,
+								"y": 0
+							},
+							"background": "transparent"
+						},
+						"alt": "fight",
+						"credits": null
+					}
+				}
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"key": "cd4c6293-27f5-4cd6-aa6f-4a381cf5155d",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			}
+		},
+		"items": []
+	}
+]

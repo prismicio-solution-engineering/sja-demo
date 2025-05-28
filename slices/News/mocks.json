@@ -1,0 +1,120 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "main_with_card_grid_and_action",
+		"primary": {
+			"main_feature": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
+										"width": 4000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?rect=142%2C0%2C3715%2C4000&w=496&h=534",
+									"width": 496,
+									"height": 534,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 142,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "ability",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							],
+							[
+								"headline",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading2",
+											"content": {
+												"text": "Color"
+											}
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "bdeb5133-9da1-4303-b630-f08cf3778019",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev",
+										"text": "previous"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"feature_cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Large"
+											}
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Exercitation aliqua laboris voluptate eu. Ullamco fugiat tempor occaecat ipsum commodo pariatur adipisicing labore Lorem consequat velit nulla sunt incididunt anim. Excepteur laborum eiusmod pariatur incididunt labore laborum ut ex laboris labore culpa ullamco reprehenderit."
+											}
+										}
+									]
+								}
+							],
+							[
+								"card_link",
+								{
+									"key": "4cd90056-8ddd-4aa3-8787-a0c2a667e370",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "present"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

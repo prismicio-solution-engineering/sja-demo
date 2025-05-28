@@ -1,0 +1,35 @@
+{
+  "type": "SharedSlice",
+  "id": "centered_cta",
+  "name": "CenteredCta",
+  "variations": [
+    {
+      "id": "single_button",
+      "name": "Single Button",
+      "description": "Displays a single button centered within a colored background.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "allowText": true,
+            "repeat": false,
+            "select": null,
+            "allowTargetBlank": true
+          }
+        },
+        "button_background_color": {
+          "type": "Color",
+          "config": {
+            "label": "Button Background Color"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
