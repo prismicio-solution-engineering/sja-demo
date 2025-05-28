@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
+import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 
 /**
  * Props for `IconCardGrid`.
@@ -12,39 +13,25 @@ export type IconCardGridProps = SliceComponentProps<Content.IconCardGridSlice>;
  */
 const IconCardGrid: FC<IconCardGridProps> = ({ slice }) => {
   return (
-    <section
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
-    >
-      Placeholder component for icon_card_grid (variation: {slice.variation})
-      slices.
-      <br />
-      <strong>You can edit this slice directly in your code editor.</strong>
-      {/**
-       * 💡 Use Prismic MCP with your code editor
-       *
-       * Get AI-powered help to build your slice components — based on your actual model.
-       *
-       * ▶️ Setup:
-       * 1. Add a new MCP Server in your code editor:
-       *
-       * {
-       *   "mcpServers": {
-       *     "Prismic MCP": {
-       *       "command": "npx",
-       *       "args": ["-y", "@prismicio/mcp-server"]
-       *     }
-       *   }
-       * }
-       *
-       * 2. Select Claude 3.7 Sonnet (recommended for optimal output)
-       *
-       * ✅ Then open your slice file and ask your code editor:
-       *    "Code this slice"
-       *
-       * Your code editor reads your slice model and helps you code faster ⚡
-       * 📚 Give your feedback: https://community.prismic.io/t/help-us-shape-the-future-of-slice-creation/19505
-       */}
+    <section className="py-12 px-4 bg-white w-full">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 max-w-7xl mx-auto">
+          {slice.primary.cards.map((item, idx) => (
+            <PrismicNextLink
+              key={idx}
+              field={item.link}
+              className="border-2 border-white rounded-2xl p-4 flex flex-col items-center text-center hover:border-primary-green hover:shadow-lg transition duration-300 cursor-pointer"
+            >
+              <div className="w-56 h-56  flex items-center justify-center">
+                <PrismicNextImage field={item.icon} />
+              </div>
+              <span className="text-xl font-medium text-font-gray">
+                {item.link.text}
+              </span>
+            </PrismicNextLink>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
