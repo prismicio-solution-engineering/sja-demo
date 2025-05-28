@@ -15,22 +15,22 @@
 									"__TYPE__": "ImageContent",
 									"origin": {
 										"id": "main",
-										"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
-										"width": 3935,
-										"height": 5894
+										"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+										"width": 3024,
+										"height": 3778
 									},
-									"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?rect=0%2C1717%2C3935%2C2459&w=680&h=425",
-									"width": 680,
-									"height": 425,
+									"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?rect=0%2C957%2C3024%2C1864&w=623&h=384",
+									"width": 623,
+									"height": 384,
 									"edit": {
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 1717
+											"y": 957
 										},
 										"background": "transparent"
 									},
-									"alt": "protection"
+									"alt": "fairly"
 								}
 							],
 							[
@@ -64,12 +64,11 @@
 							[
 								"link",
 								{
-									"key": "5143c0f0-2217-41d4-bce2-95c970fb8176",
+									"key": "8545c0fc-028c-4f64-97bb-faf627942631",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
-										"url": "https://slicemachine.dev",
-										"text": "mathematics"
+										"url": "https://slicemachine.dev"
 									}
 								}
 							]

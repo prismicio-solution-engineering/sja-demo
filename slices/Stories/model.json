@@ -19,11 +19,11 @@
               "image": {
                 "type": "Image",
                 "config": {
+                  "label": "Image",
                   "constraint": {
-                    "height": 425,
-                    "width": 680
-                  },
-                  "label": "Image"
+                    "height": 384,
+                    "width": 623
+                  }
                 }
               },
               "headline": {
@@ -47,7 +47,7 @@
                   "placeholder": "",
                   "select": null,
                   "allowTargetBlank": true,
-                  "allowText": true,
+                  "allowText": false,
                   "repeat": false
                 }
               }
