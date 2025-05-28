@@ -15,7 +15,8 @@ export type NotificationBarProps =
 const NotificationBar: FC<NotificationBarProps> = ({ slice }) => {
   return (
     <section
-      className={`w-full bg-[${slice.primary.background_color}] py-3 px-4`}
+      className={`w-full py-3 px-4`}
+      style={{ backgroundColor: `${slice.primary.background_color}` }}
     >
       <div className=" mx-auto text-center">
         <div className="font-medium text-sm md:text-base">
