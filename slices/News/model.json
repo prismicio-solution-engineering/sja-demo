@@ -30,8 +30,19 @@
               "headline": {
                 "type": "StructuredText",
                 "config": {
-                  "single": "heading2",
-                  "label": "Headline"
+                  "label": "Headline",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "single": "heading3"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong"
                 }
               },
               "link": {
@@ -62,8 +73,10 @@
               "description": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph,strong,em,hyperlink",
-                  "label": "Description"
+                  "label": "Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em"
                 }
               },
               "card_link": {

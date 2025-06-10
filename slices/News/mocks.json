@@ -35,20 +35,6 @@
 								}
 							],
 							[
-								"headline",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading2",
-											"content": {
-												"text": "Color"
-											}
-										}
-									]
-								}
-							],
-							[
 								"link",
 								{
 									"key": "bdeb5133-9da1-4303-b630-f08cf3778019",
@@ -58,6 +44,34 @@
 										"url": "https://slicemachine.dev",
 										"text": "previous"
 									}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ad sunt ex occaecat ad ullamco excepteur eiusmod do. Aliquip reprehenderit laborum elit occaecat magna occaecat. Lorem laboris reprehenderit sit magna commodo adipisicing commodo."
+											}
+										}
+									]
+								}
+							],
+							[
+								"headline",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Serious"
+											}
+										}
+									]
 								}
 							]
 						]
@@ -92,7 +106,7 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "Exercitation aliqua laboris voluptate eu. Ullamco fugiat tempor occaecat ipsum commodo pariatur adipisicing labore Lorem consequat velit nulla sunt incididunt anim. Excepteur laborum eiusmod pariatur incididunt labore laborum ut ex laboris labore culpa ullamco reprehenderit."
+												"text": "Quis in et in incididunt incididunt Lorem. Culpa consectetur incididunt nostrud."
 											}
 										}
 									]
