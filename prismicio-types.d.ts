@@ -237,6 +237,16 @@ export interface FeatureGridSliceMainWithCardGridAndActionPrimaryMainFeatureItem
   headline: prismic.TitleField;
 
   /**
+   * Description field in *News → Grid → Primary → Main Feature*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: feature_grid.main_with_card_grid_and_action.primary.main_feature[].description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
    * News link field in *News → Grid → Primary → Main Feature*
    *
    * - **Field Type**: Link

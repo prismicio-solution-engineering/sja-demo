@@ -40,8 +40,8 @@
           "config": {
             "label": "Main Image",
             "constraint": {
-              "height": 460,
-              "width": 1071
+              "height": 400,
+              "width": 1056
             },
             "thumbnails": [
               {

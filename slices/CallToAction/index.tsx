@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
-import { SliceComponentProps } from "@prismicio/react";
+import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
+import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 
 /**
  * Props for `ContentHighlightWithImage`.
@@ -15,39 +16,41 @@ const ContentHighlightWithImage: FC<ContentHighlightWithImageProps> = ({
   slice,
 }) => {
   return (
-    <section
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
-    >
-      Placeholder component for content_highlight_with_image (variation:{" "}
-      {slice.variation}) slices.
-      <br />
-      <strong>You can edit this slice directly in your code editor.</strong>
-      {/**
-       * 💡 Use Prismic MCP with your code editor
-       *
-       * Get AI-powered help to build your slice components — based on your actual model.
-       *
-       * ▶️ Setup:
-       * 1. Add a new MCP Server in your code editor:
-       *
-       * {
-       *   "mcpServers": {
-       *     "Prismic MCP": {
-       *       "command": "npx",
-       *       "args": ["-y", "@prismicio/mcp-server"]
-       *     }
-       *   }
-       * }
-       *
-       * 2. Select Claude 3.7 Sonnet (recommended for optimal output)
-       *
-       * ✅ Then open your slice file and ask your code editor:
-       *    "Code this slice"
-       *
-       * Your code editor reads your slice model and helps you code faster ⚡
-       * 📚 Give your feedback: https://community.prismic.io/t/help-us-shape-the-future-of-slice-creation/19505
-       */}
+    <section className="w-full py-12 px-4 bg-white overflow-hidden">
+      <PrismicNextLink
+        field={slice.primary.link}
+        className="flex flex-row flex-nowrap"
+      >
+        <div className="w-1/3 z-10 flex shrink basis-auto -mr-[10%] items-center px-4">
+          <div className="bg-[#bfdfd2] bg-opacity-90 p-8 rounded-lg">
+            <div className="text-4xl font-bold text-font-gray mb-4">
+              <PrismicRichText field={slice.primary.title} />
+            </div>
+            <div className="text-font-gray text-2xl font-extralight leading-relaxed mb-6">
+              <PrismicRichText field={slice.primary.description} />
+            </div>
+            <div className="flex justify-end">
+              <svg
+                className="w-12 h-6 text-font-gray"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <PrismicNextImage
+          field={slice.primary.main_image}
+          className="w-3/4 h-[400px] object-cover rounded-lg"
+        />
+      </PrismicNextLink>
     </section>
   );
 };
