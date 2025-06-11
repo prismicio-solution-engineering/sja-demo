@@ -21,8 +21,8 @@ const FeatureGrid: FC<FeatureGridProps> = ({ slice }) => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-12">
-          {slice.primary.main_feature.map((item) => (
-            <div className="w-full space-y-6">
+          {slice.primary.main_feature.map((item, idx) => (
+            <div key={idx} className="w-full space-y-6">
               <div className="">
                 <PrismicNextImage
                   field={item.image}
