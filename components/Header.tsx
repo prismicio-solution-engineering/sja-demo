@@ -86,7 +86,7 @@ const Header = () => {
         "Young Responders",
         "NHS Cadets",
       ],
-      "Fundraise": [
+      Fundraise: [
         "Fundraising events",
         "Organise your own fundraiser",
         "Face-to-face fundraising",
@@ -159,7 +159,7 @@ const Header = () => {
                   onMouseEnter={() => handleMouseEnter(menuItem)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <button className="px-3 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-teal-600 hover:border-b-2 hover:border-teal-600">
+                  <button className="px-3 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-primary-green hover:border-b-2 hover:border-primtext-primary-green">
                     {menuItem}
                   </button>
                 </div>
@@ -174,7 +174,7 @@ const Header = () => {
               onMouseEnter={() => handleMouseEnter("What We Do")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="px-3 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-teal-600 hover:border-b-2 hover:border-teal-600">
+              <button className="px-3 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-primary-green hover:border-b-2 hover:border-primtext-primary-green">
                 What We Do
               </button>
             </div>
@@ -196,7 +196,7 @@ const Header = () => {
                   <div className="flex flex-row flex-wrap py-6">
                     {Object.entries(navigationData[activeDropdown]).map(
                       ([category, items], index) => (
-                        <div key={category} className="w-1/4 px-6">
+                        <div key={index} className="w-1/4 px-6">
                           {items.length > 0 ? (
                             // Has sub-items - show as category header with smaller links
                             <>
@@ -204,23 +204,25 @@ const Header = () => {
                                 {category}
                               </h3>
                               <ul className="space-y-2">
-                                {items.map((item: string, itemIndex: number) => (
-                                  <li key={itemIndex}>
-                                    <a
-                                      href="#"
-                                      className="text-sm text-gray-600 hover:text-teal-600 transition-colors block py-1"
-                                    >
-                                      {item}
-                                    </a>
-                                  </li>
-                                ))}
+                                {items.map(
+                                  (item: string, itemIndex: number) => (
+                                    <li key={itemIndex}>
+                                      <a
+                                        href="#"
+                                        className="text-sm text-gray-600 hover:text-primary-green transition-colors block py-1"
+                                      >
+                                        {item}
+                                      </a>
+                                    </li>
+                                  )
+                                )}
                               </ul>
                             </>
                           ) : (
                             // No sub-items - show as main link
                             <a
                               href="#"
-                              className="text-sm text-gray-900 hover:text-teal-600 transition-colors block py-2"
+                              className="text-sm text-gray-900 hover:text-primary-green transition-colors block py-2"
                             >
                               {category}
                             </a>
@@ -235,7 +237,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-teal-600"
+            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-primary-green"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <svg
@@ -263,8 +265,8 @@ const Header = () => {
                   <button
                     className={`block w-full text-left px-3 py-2 text-base font-medium ${
                       menuItem === "First Aid Courses"
-                        ? "text-teal-600"
-                        : "text-gray-700 hover:text-teal-600"
+                        ? "text-primary-green"
+                        : "text-gray-700 hover:text-primary-green"
                     }`}
                   >
                     {menuItem}
@@ -279,15 +281,17 @@ const Header = () => {
                                 {category}
                               </div>
                               <div className="ml-4 space-y-1">
-                                {items.map((item: string, itemIndex: number) => (
-                                  <a
-                                    key={itemIndex}
-                                    href="#"
-                                    className="block text-sm text-gray-600 hover:text-teal-600 py-1"
-                                  >
-                                    {item}
-                                  </a>
-                                ))}
+                                {items.map(
+                                  (item: string, itemIndex: number) => (
+                                    <a
+                                      key={itemIndex}
+                                      href="#"
+                                      className="block text-sm text-gray-600 hover:text-primary-green py-1"
+                                    >
+                                      {item}
+                                    </a>
+                                  )
+                                )}
                               </div>
                             </div>
                           )
